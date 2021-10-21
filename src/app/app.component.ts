@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'holaMundo';
+  public title:string = 'Contador con angular';
+  public numero:number = 0;
+
+  public sumarRestar(valor:number){
+    this.numero = this.numero + valor;
+  }
+
 }
